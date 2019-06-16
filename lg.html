@@ -113,7 +113,8 @@ function updateOutput() {
 <h2>Excel Formula</h2>
 <div>
 Copy the below formula and paste it in an Excel cell. It will give you the equivalent letter grade 
-of the number in the cell to the left of it. For example, if the numeric grade is in Excel cell F1, paste the formula in cell F2.
+of the number in the cell to the left of it. For example, if the numeric grade is in Excel cell A4, 
+paste the formula in cell B4.
 </div>
 <pre style="font-size:medium">
 =VLOOKUP(ROUND(INDIRECT("RC[-1]",0),0),{0,"F";60,"D";61,"D+";63,"C-";66,"C";69,"C+";72,"B-";75,"B";79,"B+";83,"A-";87,"A";93,"A+"},2,TRUE)
